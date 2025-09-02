@@ -3,10 +3,14 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Paragrafo from './Paragrafo.jsx'
+import CaixaTexto from './CaixaTexto9.jsx'
+import TarefasForm from './components/Tarefas/TarefasForm.jsx'
+import AppTarefas from './AppTarefas.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-    <Paragrafo />
+    
+    <AppTarefas />
+    
   </StrictMode>,
 )
