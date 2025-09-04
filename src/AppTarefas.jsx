@@ -14,6 +14,15 @@ export default function AppTarefas() {
 
         setTarefas([...tarefas, novTarefa])
     }
+
+    const editTarefa = (id, titulo, desc) => {
+        setTarefas(tarefas.map(tarefa => tarefa.id === id ? {...tarefa, titulo: titulo, desc: desc} : tarefa));
+    }
+
+    const deleteTarefa = (id) => {
+        setTarefas(tarefas.filter(tarefa => tarefa.id !== id));
+    }
+    
     
     return (
         <div>
@@ -21,7 +30,11 @@ export default function AppTarefas() {
 
             <TarefasForm  onAddTarefa={handleAddTarefa} />
 
-            <TarefasLista  tarefas={tarefas} />
+            <TarefasLista
+                tarefas={tarefas}
+                onEditTarefa={editTarefa} 
+                onDeleteTarefa={deleteTarefa} 
+            />
 
         </div>
     );
