@@ -1,16 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import AppTarefas from './pages/Tarefas/AppTarefas.jsx'
 import App from './App.jsx'
-import Paragrafo from './Paragrafo.jsx'
-import CaixaTexto from './CaixaTexto9.jsx'
-import TarefasForm from './components/Tarefas/TarefasForm.jsx'
-import AppTarefas from './AppTarefas.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    {/* <AppTarefas /> */}
     
-    <AppTarefas />
-    
+    <App />
+
   </StrictMode>,
 )
