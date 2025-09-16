@@ -1,0 +1,20 @@
+/* Tema.css */
+
+.light {
+    color: rgb(0, 34, 34);
+    border-radius: 35px;
+    background: #FFFFFF;
+    box-shadow: inset 33px 33px 83px #666666,
+        inset -33px -33px 83px #ffffff;
+
+    padding: 10px;
+}
+
+.dark {
+    color: rgb(62, 168, 80);
+    border-radius: 35px;
+    background: linear-gradient(145deg, #272727, #202020);
+    box-shadow: 32px 32px 72px #191919,
+        -32px -32px 72px #2f2f2f;
+    padding: 10px;
+}

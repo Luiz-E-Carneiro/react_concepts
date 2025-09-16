@@ -6,7 +6,7 @@ export default function Home() {
     
     return (
         <>
-            <div>
+            <div className={theme}>
                 <h2>Aplicação React - Fundamentos</h2>
                 <p>Abacaxi ... 🍍</p>
 

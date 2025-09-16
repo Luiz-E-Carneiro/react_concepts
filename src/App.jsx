@@ -2,10 +2,11 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
 import Home from './pages/Home';
 import About from './pages/About';
+import Users from './pages/Users/User';
 import AppTarefas from './pages/Tarefas/AppTarefas';
-import { ThemeProvider } from './contexts/ThemeContext';
+import { ThemeContext, ThemeProvider } from './contexts/ThemeContext';
 import ThemeToggleButton from './components/ThemeToggleButton';
-
+import './tema.css'
 
 function App() {
 
@@ -26,6 +27,9 @@ function App() {
               <li>
                 <Link to="/tarefas">Tarefas</Link>
               </li>
+              <li>
+                <Link to="/users">Usuarios</Link>
+              </li>
             </ul>
           </nav>
 
@@ -40,6 +44,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/tarefas' element={<AppTarefas />} />
+            <Route path='/users' element={<Users />} />
           </Routes>
         </div>
 
